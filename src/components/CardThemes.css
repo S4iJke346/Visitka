@@ -1,0 +1,121 @@
+.card-theme-laz {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa 85%);
+  color: white;
+  border: 2px solid #93c5fd;
+  box-shadow: none;
+}
+.card-theme-dark {
+  background: #1f2937;
+  color: white;
+  border: 2px solid #4b5563;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.card-theme-light {
+  background: white;
+  color: #1f2937;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.card-theme-blue {
+  background: linear-gradient(to right, #3b82f6, #1d4ed8);
+  color: white;
+  border: 2px solid #60a5fa;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.card-theme-green {
+  background: linear-gradient(to right, #10b981, #0d9488);
+  color: white;
+  border: 2px solid #34d399;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.card-theme-red {
+  background: linear-gradient(to right, #ef4444, #db2777);
+  color: white;
+  border: 2px solid #f87171;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.business-card {
+  width: 720px;
+  height: 350px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+}
+.business-card-content {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+}
+.business-card-name {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.business-card-profession {
+  text-align: center;
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+.business-card-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.business-card-contact-item {
+  display: flex;
+  align-items: center;
+}
+.business-card-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+.business-card-photo-container {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.business-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.business-card-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.business-card-photo-placeholder {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.business-card-photo-placeholder-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.card-theme-light .business-card-photo-placeholder {
+  background-color: rgba(66, 66, 66, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.card-theme-light .business-card-photo-placeholder-icon {
+  color: rgba(0, 0, 0, 0.7);
+}
